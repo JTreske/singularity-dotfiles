@@ -1,0 +1,259 @@
+[
+  {
+    "group": "Input Settings",
+    "description": "",
+    "settings": [
+      {
+        "name": "Keyboard Layout",
+        "id": "variant_keyboard_layout",
+        "instructions": "Choose your keyboard layout variant:",
+        "file": "~/.config/hypr/conf/keyboard-layout.conf",
+        "type": "files",
+        "folder": "~/.config/hypr/conf/keyboard-layout",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "source = ~/.config/hypr/conf/keyboard-layout/.*",
+        "default": "de.conf"
+      },
+      {
+        "name": "Input",
+        "id": "variant_input",
+        "instructions": "Choose your input variant:",
+        "file": "~/.config/hypr/conf/input.conf",
+        "type": "files",
+        "folder": "~/.config/hypr/conf/input",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "source = ~/.config/hypr/conf/input/.*",
+        "default": "default.conf"
+      },
+      {
+        "name": "Keybinding",
+        "id": "variant_keybinding",
+        "instructions": "Choose your keybinding variant:",
+        "file": "~/.config/hypr/conf/keybinding.conf",
+        "type": "files",
+        "folder": "~/.config/hypr/conf/keybinding",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "source = ~/.config/hypr/conf/keybinding/.*",
+        "default": "default.conf"
+      }
+    ]
+  },
+  {
+    "group": "System",
+    "description": "",
+    "settings": [
+      {
+        "name": "Device",
+        "id": "variant_device",
+        "instructions": "Choose your device variant:",
+        "file": "~/.config/hypr/conf/device.conf",
+        "type": "files",
+        "folder": "~/.config/hypr/conf/device",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "source = ~/.config/hypr/conf/device/.*",
+        "default": "default.conf"
+      },
+      {
+        "name": "Autostart",
+        "id": "variant_autostart",
+        "instructions": "Choose your autostart variant:",
+        "file": "~/.config/hypr/conf/autostart-custom.conf",
+        "type": "files",
+        "folder": "~/.config/hypr/conf/autostart",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "source = ~/.config/hypr/conf/autostart/.*",
+        "default": "default.conf"
+      },
+      {
+        "name": "Environment",
+        "id": "variant_environment",
+        "instructions": "Choose your environment variant:",
+        "file": "~/.config/hypr/conf/environment-custom.conf",
+        "type": "files",
+        "folder": "~/.config/hypr/conf/environment",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "source = ~/.config/hypr/conf/environment/.*",
+        "default": "default.conf"
+      },
+      {
+        "name": "Monitor",
+        "id": "variant_monitor",
+        "instructions": "Choose your monitor variant:",
+        "file": "~/.config/hypr/conf/monitor.conf",
+        "type": "files",
+        "folder": "~/.config/hypr/conf/monitor",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "source = ~/.config/hypr/conf/monitor/.*",
+        "default": "default.conf"
+      }
+    ]
+  },
+  {
+    "group": "Appearance",
+    "description": "",
+    "settings": [
+      {
+        "name": "General",
+        "id": "variant_general",
+        "instructions": "Choose your general variant:",
+        "file": "~/.config/hypr/conf/general.conf",
+        "type": "files",
+        "folder": "~/.config/hypr/conf/general",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "source = ~/.config/hypr/conf/general/.*",
+        "default": "default.conf"
+      },
+      {
+        "name": "Workspace",
+        "id": "variant_workspace",
+        "instructions": "Choose your workspace variant:",
+        "file": "~/.config/hypr/conf/workspace.conf",
+        "type": "files",
+        "folder": "~/.config/hypr/conf/workspace",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "source = ~/.config/hypr/conf/workspace/.*",
+        "default": "default.conf"
+      },
+      {
+        "name": "Window Layout",
+        "id": "variant_layout",
+        "instructions": "Choose your layout variant:",
+        "file": "~/.config/hypr/conf/layout.conf",
+        "type": "files",
+        "folder": "~/.config/hypr/conf/layout",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "source = ~/.config/hypr/conf/layout/.*",
+        "default": "dwindle.conf"
+      },
+      {
+        "name": "Window Rule",
+        "id": "variant_window_rule",
+        "instructions": "Choose your window-rule variant:",
+        "file": "~/.config/hypr/conf/window-rule.conf",
+        "type": "files",
+        "folder": "~/.config/hypr/conf/window-rule",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "source = ~/.config/hypr/conf/window-rule/.*",
+        "default": "default.conf"
+      },
+      {
+        "name": "Window Decoration",
+        "id": "variant_decoration",
+        "instructions": "Choose your decoration variant:",
+        "file": "~/.config/hypr/conf/decoration.conf",
+        "type": "files",
+        "folder": "~/.config/hypr/conf/decoration",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "source = ~/.config/hypr/conf/decoration/.*",
+        "default": "full-op-no-blur.conf"
+      },
+      {
+        "name": "Animation",
+        "id": "variant_animation",
+        "instructions": "Choose your animation variant:",
+        "file": "~/.config/hypr/conf/animation.conf",
+        "type": "files",
+        "folder": "~/.config/hypr/conf/animation",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "source = ~/.config/hypr/conf/animation/.*",
+        "default": "end-4.conf"
+      },
+      {
+        "name": "Miscellaneous",
+        "id": "variant_misc",
+        "instructions": "Choose your misc variant:",
+        "file": "~/.config/hypr/conf/misc.conf",
+        "type": "files",
+        "folder": "~/.config/hypr/conf/misc",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "source = ~/.config/hypr/conf/misc/.*",
+        "default": "default.conf"
+      }
+    ]
+  },
+  {
+    "group": "Default Apps",
+    "description": "Please setup your default apps.",
+    "settings": [
+      {
+        "name": "Default Terminal Emulator",
+        "id": "default_terminal",
+        "instructions": "Enter the command to execute the terminal",
+        "file": "~/.config/singularity/default-apps/terminal.sh",
+        "type": "textfield",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": ".*",
+        "default": "kitty \"$@\""
+      },
+      {
+        "name": "Default Browser",
+        "id": "default_browser",
+        "instructions": "Enter the command to execute the browser",
+        "file": "~/.config/singularity/default-apps/browser.sh",
+        "type": "textfield",
+        "mode": "overwrite",
+        "default": ""
+      },
+      {
+        "name": "Default File Manager",
+        "id": "default_file_manager",
+        "instructions": "Enter the command to execute the file_manager",
+        "file": "~/.config/singularity/default-apps/file-manager.sh",
+        "type": "textfield",
+        "mode": "overwrite",
+        "default": "nemo"
+      },
+      {
+        "name": "Default Editor",
+        "id": "default_editor",
+        "instructions": "Enter the command to execute the editor",
+        "file": "~/.config/singularity/default-apps/editor.sh",
+        "type": "textfield",
+        "mode": "overwrite",
+        "default": "gnome-text-editor"
+      },
+      {
+        "name": "Default Calculator",
+        "id": "default_calculator",
+        "instructions": "Enter the command to execute the calculator",
+        "file": "~/.config/singularity/default-apps/calculator.sh",
+        "type": "textfield",
+        "mode": "overwrite",
+        "default": "gnome-calculator"
+      },
+      {
+        "name": "Default Music Player",
+        "id": "default_music",
+        "instructions": "Enter the command to execute the music",
+        "file": "~/.config/singularity/default-apps/music.sh",
+        "type": "textfield",
+        "mode": "overwrite",
+        "default": "amberol"
+      },
+      {
+        "name": "Default Email Client",
+        "id": "default_mail",
+        "instructions": "Enter the command to execute the mail",
+        "file": "~/.config/singularity/default-apps/mail.sh",
+        "type": "textfield",
+        "mode": "overwrite",
+        "default": ""
+      }
+    ]
+  }
+]

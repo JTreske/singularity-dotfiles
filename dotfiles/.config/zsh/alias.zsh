@@ -1,0 +1,13 @@
+alias sudo='sudo '
+alias ..='z ..'
+alias cd='z'
+alias d='dirs -v'
+for index ({1..9}) alias "$index"="z +${index}"; unset index
+alias c='clear'
+alias ff='fastfetch'
+alias ls='eza -a --icons=always'
+alias ll='eza -al --icons=always'
+alias lt='eza -a --tree --level=1 --icons=always'
+alias e='$EDITOR'
+alias settings='ml4w-dotfiles-settings org.singularity.dotfiles'
+alias settings-gui='ml4w_settings'

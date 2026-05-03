@@ -1,0 +1,421 @@
+{
+  "ESSENTIALS": [
+    {
+      "subcategory": "Network Share",
+      "package_name": "cifs-utils",
+      "description": "Needed to mount SMB network shares"
+    },
+    {
+      "subcategory": "Wine",
+      "package_name": "wine",
+      "description": "Compatibility layer needed to run windows applications"
+    },
+    {
+      "subcategory": "Wine",
+      "package_name": "wine-mono",
+      "description": "Built-in replacement for Microsoft's .NET Framework"
+    },
+    {
+      "subcategory": "Print",
+      "package_name": "cups",
+      "description": "OpenPrinting CUPS - daemon package (enable cups.service after installation)"
+    },
+    {
+      "subcategory": "Print",
+      "package_name": "system-config-printer",
+      "description": "A CUPS printer configuration tool and status applet"
+    },
+    {
+      "subcategory": "Print",
+      "package_name": "gutenprint",
+      "description": "Drivers for Canon, Epson, Lexmark, Sony, and more for use with CUPS"
+    },
+    {
+      "subcategory": "Scanner",
+      "package_name": "sane",
+      "description": "Provides support for scanners"
+    },
+    {
+      "subcategory": "Scanner",
+      "package_name": "simple-scan",
+      "description": "Simple GUI application for scanning documents"
+    }
+  ],
+  "OFFICE": [
+    {
+      "subcategory": "Browser (pick 1)",
+      "package_name": "zen-browser-bin",
+      "description": "Firefox-based browser"
+    },
+    {
+      "subcategory": "Browser (pick 1)",
+      "package_name": "firefox",
+      "description": "Mozilla Firefox browser"
+    },
+    {
+      "subcategory": "Browser (pick 1)",
+      "package_name": "google-chrome",
+      "description": "Google's chromium based browser"
+    },
+    {
+      "subcategory": "PDF",
+      "package_name": "okular",
+      "description": "Feature rich document viewer"
+    },
+    {
+      "subcategory": "PDF",
+      "package_name": "papers",
+      "description": "Document viewer for PDF and other document formats"
+    },
+    {
+      "subcategory": "Office Suite (pick 1)",
+      "package_name": "libreoffice-fresh",
+      "description": "LibreOffice suite including writer, calculation, and presentation tools"
+    },
+    {
+      "subcategory": "Office Suite (pick 1)",
+      "package_name": "onlyoffice-bin",
+      "description": "An office suite that combines text, spreadsheet and presentation editors"
+    },
+    {
+      "subcategory": "TeX",
+      "package_name": "texlive",
+      "description": "Group containing most of the TeX Live packages"
+    },
+    {
+      "subcategory": "TeX",
+      "package_name": "texlive-lang",
+      "description": "Group containing packages providing character sets for languages with non-Latin characters"
+    },
+    {
+      "subcategory": "TeX",
+      "package_name": "biber",
+      "description": "Alternative bibliography processing backend for BibLaTeX"
+    }
+  ],
+  "MULTIMEDIA": [
+    {
+      "subcategory": "Video Player",
+      "package_name": "vlc",
+      "description": "Multimedia player that plays anything",
+      "dependencies": ["vlc-plugins-all"]
+    },
+    {
+      "subcategory": "Video Player",
+      "package_name": "jellyfin-desktop",
+      "description": "Official Jellyfin desktop client to stream from Jellyfin server"
+    },
+    {
+      "subcategory": "Music Player",
+      "package_name": "spotify-launcher",
+      "description": "Launcher for spotify with automatic updates"
+    },
+    {
+      "subcategory": "Music Player",
+      "package_name": "gelly",
+      "description": "A native, lightweight music client for Jellyfin and Subsonic"
+    },
+    {
+      "subcategory": "Music Player",
+      "package_name": "feishin-bin",
+      "description": "Music client for Jellyfin, Navidrome, and servers with OpenSubsonic compatible API"
+    },
+    {
+      "subcategory": "Image Viewer/Editor",
+      "package_name": "gwenview",
+      "description": "Image viewer with simple editing capabilities"
+    },
+    {
+      "subcategory": "Image Viewer/Editor",
+      "package_name": "gimp",
+      "description": "Image editing and compositing software similar to Adobe Photoshop"
+    },
+    {
+      "subcategory": "Image Viewer/Editor",
+      "package_name": "darktable",
+      "description": "RAW image processing software similar to Adobe Lightroom"
+    },
+    {
+      "subcategory": "Image Viewer/Editor",
+      "package_name": "rapidraw-bin",
+      "description": "RAW image processing software similar to Adobe Lightroom"
+    },
+    {
+      "subcategory": "Video Editor",
+      "package_name": "kdenlive",
+      "description": "Free and open source video editor"
+    },
+    {
+      "subcategory": "Video Editor",
+      "package_name": "shotcut",
+      "description": "Free and open source video editor"
+    },
+    {
+      "subcategory": "Video Editor",
+      "package_name": "natron-bin",
+      "description": "Node-graph video compositor"
+    },
+    {
+      "subcategory": "MKV",
+      "package_name": "makemkv",
+      "description": "DVD and Blu-ray to MKV converter"
+    },
+    {
+      "subcategory": "MKV",
+      "package_name": "mkvtoolnix-gui",
+      "description": "Set of tools to create, edit and inspect Matroska files"
+    },
+    {
+      "subcategory": "MKV",
+      "package_name": "mkvextract-gtk",
+      "description": "Extract tracks from Matroska files"
+    },
+    {
+      "subcategory": "Subtitles",
+      "package_name": "subtitleedit",
+      "description": "Advanced subtitle editor and converter"
+    },
+    {
+      "subcategory": "Audio Editing",
+      "package_name": "puddletag",
+      "description": "Audio tag editor"
+    },
+    {
+      "subcategory": "Audio Editing",
+      "package_name": "losslesscut-bin",
+      "description": "GUI tool for lossless trimming/cutting of video/audio files"
+    }
+  ],
+  "GAMING": [
+    {
+      "subcategory": "Launcher",
+      "package_name": "steam",
+      "description": "Valve's digital software delivery system"
+    },
+    {
+      "subcategory": "Launcher",
+      "package_name": "heroic-games-launcher-bin",
+      "description": "An Open source Launcher for Epic, Amazon and GOG Games"
+    },
+    {
+      "subcategory": "Launcher",
+      "package_name": "faugus-launcher",
+      "description": "A simple and lightweight app for running Windows games using UMU-Launcher (best for EA, Ubisoft, ...)"
+    },
+    {
+      "subcategory": "Utility",
+      "package_name": "gamemode",
+      "description": "Allows games to request a set of optimizations to be temporarily applied to the host OS"
+    },
+    {
+      "subcategory": "Utility",
+      "package_name": "mangohud",
+      "description": "Overlay for monitoring FPS, temperatures, CPU/GPU load and more"
+    },
+    {
+      "subcategory": "Utility",
+      "package_name": "gamescope",
+      "description": "SteamOS session compositing window manager for better support for upscaling, limiting framerate and more"
+    },
+    {
+      "subcategory": "Utility",
+      "package_name": "protonplus",
+      "description": "Manage and update various compatibility tools like Proton across different launchers"
+    },
+    {
+      "subcategory": "Utility",
+      "package_name": "xone-dongle-firmware",
+      "description": "Xbox wireless controller adapter firmware (also for most third party controller brands)"
+    },
+    {
+      "subcategory": "Save Games",
+      "package_name": "ludusavi",
+      "description": "Backup tool for PC game saves"
+    },
+    {
+      "subcategory": "Stream",
+      "package_name": "sunshine",
+      "description": "Self-hosted GameStream host for Moonlight"
+    }
+  ],
+  "SOCIAL": [
+    {
+      "subcategory": "Discord (pick 1)",
+      "package_name": "discord",
+      "description": "Official discord application"
+    },
+    {
+      "subcategory": "Discord (pick 1)",
+      "package_name": "vesktop-bin",
+      "description": "Discord client with improved Linux support",
+      "config_path": [
+        {
+          "src": "apps/.config/vesktop",
+          "dst": "~/.config/vesktop"
+        }
+      ]
+    },
+    {
+      "subcategory": "Telegram",
+      "package_name": "telegram-desktop",
+      "description": "Official Telegram client for messaging and calls"
+    },
+    {
+      "subcategory": "Email",
+      "package_name": "thunderbird",
+      "description": "Mozilla Thunderbird email client"
+    }
+  ],
+  "DEVELOPMENT": [
+    {
+      "subcategory": "Editor",
+      "package_name": "zed",
+      "description": "A high-performance, multiplayer code editor from the creators of Atom and Tree-sitter",
+      "config_path": [
+        {
+          "src": "apps/.config/zed",
+          "dst": "~/.config/zed"
+        }
+      ]
+    },
+    {
+      "subcategory": "Editor",
+      "package_name": "visual-studio-code-bin",
+      "description": "Microsoft proprietary build of Visual Studio Code (use this if reliability and extension support is relevant)"
+    },
+    {
+      "subcategory": "Editor",
+      "package_name": "vscodium",
+      "description": "The Open Source build of Visual Studio Code (vscode) editor"
+    },
+    {
+      "subcategory": "Kubernetes",
+      "package_name": "headlamp-bin",
+      "description": "A Kubernetes web UI that is fully-featured, user-friendly and extensible"
+    }
+  ],
+  "SYSTEM": [
+    {
+      "subcategory": "Apps",
+      "package_name": "parui",
+      "description": "Simple TUI frontend for searching and installing applications with paru or yay"
+    },
+    {
+      "subcategory": "CPU/GPU Configuration",
+      "package_name": "lact",
+      "description": "Linux GPU Configuration Tool"
+    },
+    {
+      "subcategory": "CPU/GPU Configuration",
+      "package_name": "corectrl",
+      "description": "CPU and GPU profile-based configuration"
+    },
+    {
+      "subcategory": "CPU/GPU Configuration",
+      "package_name": "cpu-x",
+      "description": "Information on CPU, motherboard, GPU and more"
+    },
+    {
+      "subcategory": "Monitoring",
+      "package_name": "mission-center",
+      "description": "GUI monitor for CPU, Memory, Disk, Network and GPU usage"
+    },
+    {
+      "subcategory": "Benchmarking",
+      "package_name": "s-tui",
+      "description": "Terminal UI stress test and monitoring tool"
+    },
+    {
+      "subcategory": "Benchmarking",
+      "package_name": "phoronix-test-suite",
+      "description": "Comprehensive testing and benchmarking platform"
+    },
+    {
+      "subcategory": "Security",
+      "package_name": "clamtk",
+      "description": "Easy to use, light-weight, on-demand virus scanner"
+    },
+    {
+      "subcategory": "Security",
+      "package_name": "portmaster-bin",
+      "description": "Privacy suite and application firewall"
+    },
+    {
+      "subcategory": "Remote Desktop",
+      "package_name": "rustdesk",
+      "description": "Remote desktop software, written in Rust. Works out of the box, no configuration required. Great alternative to TeamViewer"
+    }
+  ],
+  "MISCELLANEOUS": [
+    {
+      "subcategory": "",
+      "package_name": "obfuscate",
+      "description": "Censor private information from any image"
+    },
+    {
+      "subcategory": "",
+      "package_name": "krita",
+      "description": "Sketching and painting application optimized for digital artists"
+    },
+    {
+      "subcategory": "",
+      "package_name": "inkscape",
+      "description": "Vector graphic editor"
+    },
+    {
+      "subcategory": "",
+      "package_name": "blender",
+      "description": "3D creation suite for modeling, rigging, animation, simulation, and rendering"
+    },
+    {
+      "subcategory": "",
+      "package_name": "freecad",
+      "description": "3D CAD software for engineering and product design"
+    },
+    {
+      "subcategory": "",
+      "package_name": "easyeffects",
+      "description": "Application for changing the sound profile (EQ, compressor, etc.)"
+    },
+    {
+      "subcategory": "",
+      "package_name": "ardour",
+      "description": "Digital audio workstation for recording, editing, and mixing"
+    },
+    {
+      "subcategory": "",
+      "package_name": "lmms",
+      "description": "Music production software for composing and synthesizing music"
+    },
+    {
+      "subcategory": "",
+      "package_name": "musescore",
+      "description": "Music notation software for composing and editing scores"
+    },
+    {
+      "subcategory": "",
+      "package_name": "scribus",
+      "description": "Desktop publishing software similar to Adobe InDesign"
+    },
+    {
+      "subcategory": "",
+      "package_name": "obs-studio",
+      "description": "Software for video recording and live streaming"
+    },
+    {
+      "subcategory": "",
+      "package_name": "bitwarden",
+      "description": "Password manager client for use with Bitwarden or self-hosted Vaultwarden"
+    },
+    {
+      "subcategory": "",
+      "package_name": "nextcloud-client",
+      "description": "Client to connect and sync files with a Nextcloud server"
+    },
+    {
+      "subcategory": "",
+      "package_name": "opencloud-desktop",
+      "description": "Client to connect and sync files with a OpenCloud server"
+    }
+  ]
+}

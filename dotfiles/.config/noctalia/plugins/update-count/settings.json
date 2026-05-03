@@ -1,0 +1,8 @@
+{
+  "updateIntervalMinutes": 30,
+  "updateTerminalCommand": "kitty {}",
+  "currentIconName": "world-download",
+  "hideOnZero": true,
+  "customCmdGetNumUpdates": "~/.config/singularity/update-count.sh",
+  "customCmdDoSystemUpdate": "~/.config/singularity/system-upgrade.sh"
+}

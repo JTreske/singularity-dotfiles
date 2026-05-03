@@ -1,0 +1,8 @@
+[config]
+
+[templates]
+
+[templates.fast-syntax-highlighting]
+input_path = "~/.config/noctalia/templates/fast-syntax-highlighting.ini"
+output_path = "~/.config/zsh/fast-syntax-highlighting/noctalia.ini"
+post_hook = ""

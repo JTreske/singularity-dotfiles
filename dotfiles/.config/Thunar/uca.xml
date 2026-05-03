@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+<action>
+  <icon>utilities-terminal</icon>
+  <name>Open Terminal Here</name>
+  <submenu></submenu>
+  <unique-id>1777736531684469-1</unique-id>
+  <command>~/.config/singularity/default-apps/terminal.sh %f</command>
+  <description>Opens the terminal in the current directory</description>
+  <range></range>
+  <patterns>*</patterns>
+  <startup-notify/>
+  <directories/>
+</action>
+<action>
+  <icon>kr_comparedirs</icon>
+  <name>Compare</name>
+  <submenu></submenu>
+  <unique-id>1777746274470822-1</unique-id>
+  <command>meld %F</command>
+  <description>Compare files with Meld</description>
+  <range></range>
+  <patterns>*</patterns>
+  <directories/>
+  <other-files/>
+  <text-files/>
+</action>
+</actions>

@@ -1,0 +1,41 @@
+{
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+  },
+  "base_keymap": "VSCode",
+  "ui_font_family": ".SystemUIFont",
+  "ui_font_size": 16,
+  "buffer_font_family": "JetBrainsMono Nerd Font",
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "system",
+    "light": "Noctalia Light",
+    "dark": "Noctalia Dark",
+  },
+  "icon_theme": {
+    "mode": "system",
+    "light": "Light Charmed Icons",
+    "dark": "Base Charmed Icons",
+  },
+  "soft_wrap": "editor_width",
+  "colorize_brackets": true,
+  "inlay_hints": {
+    "enabled": true,
+  },
+  "minimap": {
+    "show": "always",
+    "thumb": "always",
+    "thumb_border": "left_open",
+    "current_line_highlight": null,
+  },
+  "auto_install_extensions": {
+    "charmed-icons": true,
+    "html": true,
+    "ini": true,
+    "toml": true,
+    "xml": true,
+    "log": true,
+    "comment": true,
+  },
+}

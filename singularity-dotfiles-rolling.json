@@ -1,0 +1,172 @@
+{
+  "name": "Singularity - Dotfiles for Hyprland (ROLLING)",
+  "id": "org.singularity.dotfiles.rolling",
+  "description": "A fully featured desktop environment based on the dynamic tiling wayland compositor Hyprland",
+  "author": "Johannes Treske",
+  "repository": "https://github.com/JTreske/singularity-dotfiles.git",
+  "dotfiles": "dotfiles",
+  "hooks": "hooks",
+  "dependencies": "dependencies",
+  "apps": "apps",
+  "options": {
+    "request_aur": true,
+    "git_lfs": true
+  },
+  "restore": [
+    {
+      "name": "Default Apps",
+      "path": "dotfiles/.config/singularity/default-apps",
+      "selected": true
+    },
+    {
+      "name": "Noctalia Settings",
+      "path": "dotfiles/.config/noctalia/settings.json",
+      "selected": true
+    },
+    {
+      "name": "Noctalia Plugins",
+      "path": "dotfiles/.config/noctalia/plugins.json",
+      "selected": true
+    },
+    {
+      "name": "Noctalia Plugin Settings",
+      "path": "dotfiles/.config/noctalia/plugins",
+      "selected": true
+    },
+    {
+      "name": "Noctalia User Templates",
+      "path": "dotfiles/.config/noctalia/user-templates.toml",
+      "selected": true
+    },
+    {
+      "name": "Noctalia Wallpaper Settings",
+      "path": "dotfiles/.cache/noctalia/wallpapers.json",
+      "selected": true
+    },
+    {
+      "name": "Hyprland Keyboard Layout",
+      "path": "dotfiles/.config/hypr/conf/keyboard-layout.conf",
+      "selected": true
+    },
+    {
+      "name": "Hyprland Input",
+      "path": "dotfiles/.config/hypr/conf/input.conf",
+      "selected": true
+    },
+    {
+      "name": "Hyprland Keybinding",
+      "path": "dotfiles/.config/hypr/conf/keybinding.conf",
+      "selected": true
+    },
+    {
+      "name": "Hyprland Device",
+      "path": "dotfiles/.config/hypr/conf/device.conf",
+      "selected": true
+    },
+    {
+      "name": "Hyprland Monitor",
+      "path": "dotfiles/.config/hypr/conf/monitor.conf",
+      "selected": true
+    },
+    {
+      "name": "Hyprland Environment",
+      "path": "dotfiles/.config/hypr/conf/environment-custom.conf",
+      "selected": true
+    },
+    {
+      "name": "Hyprland Autostart",
+      "path": "dotfiles/.config/hypr/conf/autostart-custom.conf",
+      "selected": true
+    },
+    {
+      "name": "Hyprland General",
+      "path": "dotfiles/.config/hypr/conf/general.conf",
+      "selected": true
+    },
+    {
+      "name": "Hyprland Layout",
+      "path": "dotfiles/.config/hypr/conf/layout.conf",
+      "selected": true
+    },
+    {
+      "name": "Hyprland Workspace",
+      "path": "dotfiles/.config/hypr/conf/workspace.conf",
+      "selected": true
+    },
+    {
+      "name": "Hyprland Window Rule",
+      "path": "dotfiles/.config/hypr/conf/window-rule.conf",
+      "selected": true
+    },
+    {
+      "name": "Hyprland Decoration",
+      "path": "dotfiles/.config/hypr/conf/decoration.conf",
+      "selected": true
+    },
+    {
+      "name": "Hyprland Animation",
+      "path": "dotfiles/.config/hypr/conf/animation.conf",
+      "selected": true
+    },
+    {
+      "name": "Hyprland Miscellaneous",
+      "path": "dotfiles/.config/hypr/conf/misc.conf",
+      "selected": true
+    },
+    {
+      "name": "Hyprland Workspace",
+      "path": "dotfiles/.config/hypr/conf/workspace.conf",
+      "selected": true
+    },
+    {
+      "name": "Hyprland Custom",
+      "path": "dotfiles/.config/hypr/conf/custom.conf",
+      "selected": true
+    },
+    {
+      "name": "Qt5 Settings",
+      "path": "dotfiles/.config/qt5ct",
+      "selected": false
+    },
+    {
+      "name": "Qt6 Settings",
+      "path": "dotfiles/.config/qt6ct",
+      "selected": false
+    },
+    {
+      "name": "GTK 3",
+      "path": "dotfiles/.config/gtk-3.0",
+      "selected": false
+    },
+    {
+      "name": "GTK 2",
+      "path": "dotfiles/.gtkrc-2.0",
+      "selected": false
+    },
+    {
+      "name": "Zsh",
+      "path": "dotfiles/.zshenv",
+      "selected": false
+    },
+    {
+      "name": "Bash",
+      "path": "dotfiles/.bashrc",
+      "selected": false
+    },
+    {
+      "name": "Kitty",
+      "path": "dotfiles/.config/kitty",
+      "selected": false
+    },
+    {
+      "name": "Fastfetch",
+      "path": "dotfiles/.config/fastfetch",
+      "selected": false
+    },
+    {
+      "name": "Btop",
+      "path": "dotfiles/.config/btop",
+      "selected": false
+    }
+  ]
+}

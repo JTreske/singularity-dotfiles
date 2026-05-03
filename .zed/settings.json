@@ -1,0 +1,11 @@
+{
+  "format_on_save": "on",
+  "file_types": {
+    "JSON": ["*.dotinst"],
+  },
+  "languages": {
+    "Shell Script": {
+      "language_servers": ["bash-language-server"],
+    },
+  },
+}
