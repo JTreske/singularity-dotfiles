@@ -16,6 +16,11 @@
       "description": "Built-in replacement for Microsoft's .NET Framework"
     },
     {
+      "subcategory": "Wine",
+      "package_name": "bottles",
+      "description": "GUI frontend for managing wine prefixes and running windows applications"
+    },
+    {
       "subcategory": "Print",
       "package_name": "cups",
       "description": "OpenPrinting CUPS - daemon package (enable cups.service after installation)"
@@ -58,12 +63,12 @@
       "description": "Google's chromium based browser"
     },
     {
-      "subcategory": "PDF",
+      "subcategory": "PDF (pick 1)",
       "package_name": "okular",
       "description": "Feature rich document viewer"
     },
     {
-      "subcategory": "PDF",
+      "subcategory": "PDF (pick 1)",
       "package_name": "papers",
       "description": "Document viewer for PDF and other document formats"
     },
@@ -236,6 +241,11 @@
       "subcategory": "Stream",
       "package_name": "sunshine",
       "description": "Self-hosted GameStream host for Moonlight"
+    },
+    {
+      "subcategory": "Stream",
+      "package_name": "moonlight-qt",
+      "description": "Moonlight client for streaming games from a sunshine server"
     }
   ],
   "SOCIAL": [
@@ -281,7 +291,13 @@
     {
       "subcategory": "Editor",
       "package_name": "visual-studio-code-bin",
-      "description": "Microsoft proprietary build of Visual Studio Code (use this if reliability and extension support is relevant)"
+      "description": "Microsoft proprietary build of Visual Studio Code (use this if reliability and extension support is relevant)",
+      "config_path": [
+        {
+          "src": "apps/.vscode",
+          "dst": "~/.vscode"
+        }
+      ]
     },
     {
       "subcategory": "Editor",
@@ -342,7 +358,7 @@
     },
     {
       "subcategory": "Remote Desktop",
-      "package_name": "rustdesk",
+      "package_name": "rustdesk-bin",
       "description": "Remote desktop software, written in Rust. Works out of the box, no configuration required. Great alternative to TeamViewer"
     }
   ],
