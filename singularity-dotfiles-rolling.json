@@ -19,6 +19,11 @@
       "selected": true
     },
     {
+      "name": "Mimeapps List",
+      "path": "dotfiles/.config/mimeapps.list",
+      "selected": true
+    },
+    {
       "name": "Noctalia Settings",
       "path": "dotfiles/.config/noctalia/settings.json",
       "selected": true
@@ -45,6 +50,7 @@
     },
     {
       "name": "Hyprland Keyboard Layout",
+      "information": "Should always be enabled for restore",
       "path": "dotfiles/.config/hypr/conf/keyboard-layout.conf",
       "selected": true
     },

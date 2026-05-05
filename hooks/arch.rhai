@@ -1,11 +1,12 @@
 let kl = "";
 
 fn pre_backup() {
-  kl = api::utility::select("Choose your keyboard layout", "de", [["us", "us", ""], ["de", "de", ""]]);
-
-  api::log::step(`Setting X11 keymap to ``${kl}``...`);
-  api::runner::run_command(runner, "localectl", ["set-x11-keymap", kl], false, false, #{});
-  api::log::success("X11 keymap set!");
+  if !info.update {
+    kl = api::utility::select("Choose your keyboard layout", "de", [["us", "us", ""], ["de", "de", ""]]);
+    api::log::step(`Setting X11 keymap to ``${kl}``...`);
+    api::runner::run_command(runner, "localectl", ["set-x11-keymap", kl], false, false, #{});
+    api::log::success("X11 keymap set!");
+  }
 }
 
 // fn post_backup_pre_deps() {}
@@ -34,16 +35,18 @@ fn post_install_pre_restore() {
 }
 
 fn post_restore_pre_link() {
-  api::log::step("Setting Hyprland keyboard layout...");
-  let kl_config = `${info.dotfiles_dir}/.config/hypr/conf/keyboard-layout.conf`;
-  let kl_content = api::utility::read_file(kl_config);
+  if !info.update {
+    api::log::step("Setting Hyprland keyboard layout...");
+    let kl_config = `${info.dotfiles_dir}/.config/hypr/conf/keyboard-layout.conf`;
+    let kl_content = api::utility::read_file(kl_config);
 
-  let pattern = #"(# variant #\s+source = ~/.config/hypr/conf/keyboard-layout/).*"#;
-  let replace = "${1}" + `${kl}.conf`;
-  kl_content = api::utility::regex_replace(kl_content, pattern, replace);
+    let pattern = #"(# variant #\s+source = ~/.config/hypr/conf/keyboard-layout/).*"#;
+    let replace = "${1}" + `${kl}.conf`;
+    kl_content = api::utility::regex_replace(kl_content, pattern, replace);
 
-  api::utility::write_file(kl_config, kl_content, false);
-  api::log::success("Hyprland keyboard layout set!");
+    api::utility::write_file(kl_config, kl_content, false);
+    api::log::success("Hyprland keyboard layout set!");
+  }
 
   api::log::step("Setting up fontconfig cache...");
   api::runner::run_command(runner, "fc-cache", ["-f"], false, false, #{});

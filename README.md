@@ -92,6 +92,29 @@ Find the settings app by clicking on the right most icon in the default top bar.
 If you want to customize ZSH it would be best to only change the provided `.zshenv` file and set `ZDOTDIR` to another directory.
 This way you only have to select `.zshenv` for restore.
 
+### SDDM
+
+Run the following command to enable the Singularity SDDM theme (based on SDDM silent) or set it in the initial install process:
+
+```bash
+singularity --theme
+```
+
+If you have a multi monitor setup you can turn off additional monitors by adding the following to `/usr/share/sddm/scripts/Xsetup`:
+
+```bash
+xrandr --output "<display-name>" --off
+```
+
+Find out the display names with the command `xrandr` (e.g., `DP-2`).
+
+You might also want to change the content of `/usr/share/icons/default/index.theme` to the following to have the same cursor as everywhere else:
+
+```ini
+[Icon Theme]
+Inherits=Bibata-Modern-Ice
+```
+
 ---
 
 ## 📚 Documentation
