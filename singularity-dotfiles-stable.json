@@ -4,7 +4,7 @@
   "description": "A fully featured desktop environment based on the dynamic tiling wayland compositor Hyprland",
   "author": "Johannes Treske",
   "repository": "https://github.com/JTreske/singularity-dotfiles.git",
-  "tag": "1.0.0",
+  "tag": "1.0.1",
   "dotfiles": "dotfiles",
   "hooks": "hooks",
   "dependencies": "dependencies",
