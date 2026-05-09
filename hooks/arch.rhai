@@ -120,21 +120,27 @@ fn finalize() {
   // but noctalia still thinks the template is applied
   let sp = api::utility::resolve_home("~/.cache/noctalia/starship-palette.toml");
   if api::utility::path_exists(sp) {
-    api::runner::run_command(runner, "/etc/xdg/quickshell/noctalia-shell/Scripts/bash/template-apply.sh", ["starship"], false, #{"PALETTE_FILE": `${sp}`});
+    api::runner::run_command(runner, "/etc/xdg/quickshell/noctalia-shell/Scripts/bash/template-apply.sh", ["starship"], false, false, #{"PALETTE_FILE": `${sp}`});
     api::log::success("Starship theme applied!");
   } else {
     api::log::info("Applying theme skipped!");
   }
 
-  api::log::step("Installing `sigularity` script...");
+  api::log::step("Installing `sigularity` scripts...");
 
   let sp = `${info.profile_dir}/install.sh`;
   let st_parent = api::utility::resolve_home("~/.local/bin");
   let st = `${st_parent}/singularity`;
   api::utility::ensure_dir(st_parent);
   api::runner::run_command(runner, "install", ["-m", "755", sp, st], false, false, #{});
+  sp = `${info.profile_dir}/system-upgrade.sh`;
+  st = `${st_parent}/singularity-system-upgrade`;
+  api::runner::run_command(runner, "install", ["-m", "755", sp, st], false, false, #{});
+  sp = `${info.profile_dir}/update-count.sh`;
+  st = `${st_parent}/singularity-update-count`;
+  api::runner::run_command(runner, "install", ["-m", "755", sp, st], false, false, #{});
 
-  api::log::success("Script installed!");
+  api::log::success("Scripts installed!");
 
   api::utility::note("Next Steps", "\
     ## Setup\n\

@@ -38,3 +38,9 @@ else
 fi
 
 bash <(curl -s https://raw.githubusercontent.com/JTreske/singularity-dotfiles/refs/heads/main/install.sh) --install
+
+hyprctl reload
+
+echo "[Next Step] Restart your system"
+
+read -p "System upgrade complete. Enter to exit script."
