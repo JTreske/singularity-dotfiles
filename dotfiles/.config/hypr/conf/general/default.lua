@@ -1,0 +1,15 @@
+hl.config({
+  general = {
+    -- ! Do not set col.active_border and col.inactive_border if using Noctalia colors
+    -- ! Set layout in the layout config file
+    border_size = 2,
+    gaps_in = 5,
+    gaps_out = 10,
+    float_gaps = { top = 20, left = 10, right = 10, bottom = 10 },
+    resize_on_border = true,
+
+    snap = {
+      enabled = false
+    }
+  },
+})
