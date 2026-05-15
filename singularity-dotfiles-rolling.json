@@ -24,6 +24,23 @@
       "selected": true
     },
     {
+      "name": "Fontconfig",
+      "information": "Select for restore if you have set your own system default fonts",
+      "path": "dotfiles/.config/fontconfig/fonts.conf",
+      "selected": false
+    },
+    {
+      "name": "Xsettings",
+      "path": "dotfiles/.config/xsettingsd/xsettingsd.conf",
+      "selected": false
+    },
+    {
+      "name": "GTK Display (nwg-look)",
+      "information": "Select for restore if you have changed anything within nwg-look",
+      "path": "dotfiles/.local/share/nwg-look/gsettings",
+      "selected": false
+    },
+    {
       "name": "Noctalia Settings",
       "path": "dotfiles/.config/noctalia/settings.json",
       "selected": true
@@ -155,8 +172,23 @@
       "selected": false
     },
     {
+      "name": "Starship",
+      "path": "dotfiles/.config/starship/starship.toml",
+      "selected": false
+    },
+    {
       "name": "Bash",
       "path": "dotfiles/.bashrc",
+      "selected": false
+    },
+    {
+      "name": "Thunar State Config",
+      "path": "dotfiles/.config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml",
+      "selected": false
+    },
+    {
+      "name": "Thunar Actions",
+      "path": "dotfiles/.config/Thunar/uca.xml",
       "selected": false
     },
     {
@@ -172,6 +204,16 @@
     {
       "name": "Btop",
       "path": "dotfiles/.config/btop",
+      "selected": false
+    },
+    {
+      "name": "SDDM Theme",
+      "path": "dotfiles/.config/sddm-silent/singularity.conf",
+      "selected": false
+    },
+    {
+      "name": "Default Wallpaper",
+      "path": "dotfiles/.config/singularity/singularity.jpg",
       "selected": false
     }
   ]

@@ -9,6 +9,7 @@ This dotfiles repository is based on the [**Noctalia Shell**](https://github.com
 
 This dotfiles repository currently supports Arch Linux and Arch-based distributions like CachyOS.
 A minimal installation of the selected distribution is needed to get started.
+Make sure your system is up to date before running the installation script.
 
 Run the following command and follow the instructions:
 
