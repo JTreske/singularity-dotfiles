@@ -80,7 +80,7 @@ or open the Quickshell GUI app with this command:
 settings-gui
 ```
 
-You may also manually edit the `~/.config/hypr/conf/custom.conf` (not supported by the settings app).
+You may also manually edit the `~/.config/hypr/conf/custom.lua` (not supported by the settings app).
 This can be useful if you only want to add a single keybinding or similar to the default configs.
 
 ### Customize Noctalia

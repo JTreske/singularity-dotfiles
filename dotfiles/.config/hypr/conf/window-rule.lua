@@ -1,2 +1,3 @@
 -- variant --
-require("conf.window-rule.default")
+local name = "default.lua"
+load_variant(name, "window-rule")

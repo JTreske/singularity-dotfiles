@@ -1,2 +1,3 @@
 -- variant --
-require("conf.misc.default")
+local name = "default.lua"
+load_variant(name, "misc")

@@ -1,2 +1,3 @@
 -- variant --
-require("conf.layout.dwindle")
+local name = "dwindle.lua"
+load_variant(name, "layout")

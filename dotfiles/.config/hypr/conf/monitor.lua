@@ -1,2 +1,3 @@
 -- variant --
-require("conf.monitor.default")
+local name = "default.lua"
+load_variant(name, "monitor")

@@ -1,2 +1,3 @@
 -- variant --
-require("conf.autostart.default")
+local name = "default.lua"
+load_variant(name, "autostart")

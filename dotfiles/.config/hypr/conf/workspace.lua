@@ -1,2 +1,3 @@
 -- variant --
-require("conf.workspace.default")
+local name = "default.lua"
+load_variant(name, "workspace")

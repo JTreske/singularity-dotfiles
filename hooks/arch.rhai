@@ -37,11 +37,11 @@ fn post_install_pre_restore() {
 fn post_restore_pre_link() {
   if !info.update {
     api::log::step("Setting Hyprland keyboard layout...");
-    let kl_config = `${info.dotfiles_dir}/.config/hypr/conf/keyboard-layout.conf`;
+    let kl_config = `${info.dotfiles_dir}/.config/hypr/conf/keyboard-layout.lua`;
     let kl_content = api::utility::read_file(kl_config);
 
-    let pattern = #"(# variant #\s+source = ~/.config/hypr/conf/keyboard-layout/).*"#;
-    let replace = "${1}" + `${kl}.conf`;
+    let pattern = #"(-- variant --\s+local name = ).*"#;
+    let replace = "${1}" + `"${kl}.lua"`;
     kl_content = api::utility::regex_replace(kl_content, pattern, replace);
 
     api::utility::write_file(kl_config, kl_content, false);

@@ -1,2 +1,3 @@
 -- variant --
-require("conf.decoration.full-op-no-blur")
+local name = "full-op-no-blur.lua"
+load_variant(name, "decoration")

@@ -1,2 +1,3 @@
 -- variant --
-require("conf.animation.end-4")
+local name = "end-4.lua"
+load_variant(name, "animation")

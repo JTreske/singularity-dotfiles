@@ -2,6 +2,8 @@
 -- !            On updates these files will be overwritten.
 -- *            Use `~/.config/hypr/conf/custom.lua` for your custom settings.
 
+require("global_functions")
+
 require("conf.environment")
 require("conf.environment-custom")
 require("conf.monitor")

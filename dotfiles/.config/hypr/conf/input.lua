@@ -1,2 +1,3 @@
 -- variant --
-require("conf.input.default")
+local name = "default.lua"
+load_variant(name, "input")
