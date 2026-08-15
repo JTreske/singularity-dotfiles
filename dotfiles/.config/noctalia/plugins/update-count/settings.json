@@ -1,8 +1,0 @@
-{
-  "updateIntervalMinutes": 30,
-  "updateTerminalCommand": "~/.config/singularity/default-apps/terminal.sh {}",
-  "currentIconName": "world-download",
-  "hideOnZero": true,
-  "customCmdGetNumUpdates": "singularity-update-count",
-  "customCmdDoSystemUpdate": "singularity-system-upgrade"
-}

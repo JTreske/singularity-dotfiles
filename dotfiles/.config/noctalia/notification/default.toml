@@ -1,0 +1,15 @@
+[notification]
+background_opacity = 0.97000002861022949
+border = true
+collapse_on_dismiss = true
+enable_daemon = true
+history_retention_hours = 0
+layer = "overlay"
+max_visible = 0
+monitors = []
+offset_x = 20
+offset_y = 8
+position = "top_right"
+scale = 1.0
+show_actions = true
+show_app_name = true

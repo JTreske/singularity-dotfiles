@@ -1,5 +1,0 @@
-{
-  "detectedCompositor": "hyprland",
-  "modKeyVariable": "$mainMod",
-  "hyprlandLuaConfigPath": "~/.config/hypr/hyprland.lua"
-}

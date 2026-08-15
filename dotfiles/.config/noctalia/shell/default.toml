@@ -1,0 +1,164 @@
+[shell]
+app_icon_colorize = false
+avatar_path = ""
+button_borders = true
+card_borders = true
+clipboard_auto_paste = "auto"
+clipboard_confirm_clear_history = true
+clipboard_enabled = true
+clipboard_history_max_entries = 100
+clipboard_image_action_command = "satty -f -"
+clipboard_keep_from_closed_apps = true
+corner_radius_scale = 1.0
+date_format = "%A, %x"
+disable_mipmaps = false
+external_ip_enabled = false
+font_family = "sans-serif"
+input_borders = true
+launch_apps_as_systemd_services = false
+launch_apps_custom_command = ""
+niri_overview_type_to_launch_enabled = false
+offline_mode = false
+password_style = "default"
+polkit_agent = true
+popup_borders = true
+popup_shadows = true
+screen_time_enabled = false
+settings_show_advanced = true
+settings_window_translucent = false
+setup_wizard_enabled = true
+shared_gl_context = true
+show_location = true
+telemetry_enabled = false
+time_format = "{:%H:%M}"
+
+[shell.animation]
+enabled = true
+speed = 1.0
+
+[shell.greeter_sync]
+auto_sync = false
+
+[shell.keyboard_layout]
+
+[shell.launcher]
+app_grid = false
+auto_paste = "auto"
+categories = true
+compact = false
+fetch_exchange_rates = true
+provider_prefix = "/"
+show_icons = true
+sort_by_usage = true
+
+[shell.launcher.dmenu]
+
+[shell.mpris]
+blacklist = []
+
+[shell.panel]
+borders = true
+clipboard_placement = "floating"
+clipboard_position = "center"
+control_center_placement = "floating"
+control_center_position = "auto"
+floating_layer = "overlay"
+floating_offset = 8
+launcher_placement = "floating"
+launcher_position = "center"
+list_item_background = false
+open_near_click_clipboard = false
+open_near_click_control_center = true
+open_near_click_launcher = false
+open_near_click_session = false
+open_near_click_wallpaper = false
+polkit_placement = "floating"
+polkit_position = "center"
+session_placement = "floating"
+session_position = "center"
+shadow = true
+transparency_mode = "solid"
+wallpaper_placement = "attached"
+wallpaper_position = "auto"
+
+[shell.privacy]
+cam_filter_regex = ""
+mic_filter_regex = ""
+screen_filter_regex = ""
+
+[shell.screen_corners]
+enabled = false
+size = 32
+
+[shell.screenshot]
+confirm_region = false
+copy_to_clipboard = true
+directory = ""
+filename_pattern = ""
+freeze_screen = true
+pipe_command = ""
+pipe_to_command = false
+remember_last_region = false
+save_to_file = false
+show_cursor = false
+
+[shell.session]
+grid = false
+grid_columns = 3
+show_shortcuts = true
+
+[shell.session.power]
+
+[[shell.session.actions]]
+action = "lock"
+command = ""
+countdown_seconds = 0.0
+enabled = true
+glyph = ""
+label = ""
+shortcut = "1"
+variant = "default"
+
+[[shell.session.actions]]
+action = "logout"
+command = ""
+countdown_seconds = 0.0
+enabled = true
+glyph = ""
+label = ""
+shortcut = "2"
+variant = "default"
+
+[[shell.session.actions]]
+action = "reboot"
+command = ""
+countdown_seconds = 0.0
+enabled = true
+glyph = ""
+label = ""
+shortcut = "4"
+variant = "default"
+
+[[shell.session.actions]]
+action = "lock_and_suspend"
+command = ""
+countdown_seconds = 0.0
+enabled = true
+glyph = ""
+label = ""
+shortcut = "3"
+variant = "default"
+
+[[shell.session.actions]]
+action = "shutdown"
+command = ""
+countdown_seconds = 0.0
+enabled = true
+glyph = ""
+label = ""
+shortcut = "5"
+variant = "destructive"
+
+[shell.shadow]
+alpha = 0.55000001192092896
+direction = "down_right"
