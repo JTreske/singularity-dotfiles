@@ -59,72 +59,12 @@ fn post_restore_pre_link() {
   api::log::step("Setting up user default folders");
   api::runner::run_command(runner, "xdg-user-dirs-update", [], false, false, #{});
   api::log::success("User folders created!");
-
-  api::log::step("Installing singularity default wallpaper to expected location...");
-
-  let wp = `${info.dotfiles_dir}/.config/singularity/singularity.jpg`;
-  let wp_target = "/etc/xdg/quickshell/noctalia-shell/Assets/Wallpaper/singularity.jpg";
-  api::runner::run_command(runner, "sudo", ["cp", wp, wp_target], false, true, #{});
-
-  api::log::success("Singularity wallpaper installed!");
 }
 
 fn finalize() {
   api::log::step("Applying GTK settings from '~/.local/share/nwg-look/gsettings'...");
   api::runner::run_command(runner, "nwg-look", ["-a"], false, false, #{});
   api::log::success("GTK settings applied!");
-
-  api::log::step("Setting up Noctalia Shell...");
-
-  let nr = api::utility::resolve_home("~/.config/noctalia");
-  let pr = `${nr}/plugins`;
-  let pfp = `${nr}/plugins.json`;
-
-  let pfp_content = api::utility::read_file(pfp);
-  let plugins_json = api::utility::parse_json(pfp_content);
-
-  let states = plugins_json.states;
-  for plugin_id in states.keys() {
-    let repo_url = states[plugin_id].sourceUrl;
-
-    let plugin_dir = `${pr}/${plugin_id}`;
-    let manifest = `${plugin_dir}/manifest.json`;
-
-    if api::utility::path_exists(manifest) {
-      continue;
-    }
-
-    api::log::step(`Installing plugin ``${plugin_id}``...`);
-
-    let tmp_dir = api::utility::create_tmp_dir();
-    let tmp_dir_path = api::utility::get_tmp_path(tmp_dir);
-
-    api::runner::run_command(runner, "git", ["clone", "--filter=blob:none", "--sparse", "--depth=1", "--quiet", repo_url, tmp_dir_path], false, false, #{"GIT_TERMINAL_PROMPT": "0"});
-    api::runner::run_command(runner, "git", ["sparse-checkout", "set", plugin_id], false, false, #{}, tmp_dir_path);
-
-    api::utility::ensure_dir(plugin_dir);
-
-    let sf = `${tmp_dir_path}/${plugin_id}/settings.json`;
-    if api::utility::path_exists(sf) {
-      api::utility::remove_file(sf);
-    }
-
-    api::utility::copy_recursive(`${tmp_dir_path}/${plugin_id}`, plugin_dir);
-  }
-
-  api::log::success("Noctalia Shell set up!");
-
-  api::log::step("Applying Starship theme...");
-
-  // This is needed because on update the starship.toml with the palette applied will be overwritten
-  // but noctalia still thinks the template is applied
-  let sp = api::utility::resolve_home("~/.cache/noctalia/starship-palette.toml");
-  if api::utility::path_exists(sp) {
-    api::runner::run_command(runner, "/etc/xdg/quickshell/noctalia-shell/Scripts/bash/template-apply.sh", ["starship"], false, false, #{"PALETTE_FILE": `${sp}`});
-    api::log::success("Starship theme applied!");
-  } else {
-    api::log::info("Applying theme skipped!");
-  }
 
   api::log::step("Installing `sigularity` scripts...");
 

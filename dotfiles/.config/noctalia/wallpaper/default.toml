@@ -13,3 +13,6 @@ transition_on_startup = false
 
 [wallpaper.automation]
 enabled = false
+
+[wallpaper.default]
+path = "$XDG_CONFIG_HOME/singularity/singularity.jpg"
