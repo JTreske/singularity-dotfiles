@@ -62,7 +62,8 @@ hyprland
 uwsm
 xdg-desktop-portal-hyprland
 xdg-desktop-portal-gtk
-noctalia-shell
+noctalia
+ddcutil
 power-profiles-daemon
 cliphist
 wlsunset

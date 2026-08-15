@@ -1,0 +1,1 @@
+-- ! IMPORTANT: Add your custom Hyprland config here

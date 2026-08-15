@@ -1,0 +1,73 @@
+[accessibility]
+high_contrast = false
+ui_scale = 1.0
+
+[audio]
+enable_overdrive = false
+enable_sounds = false
+notification_sound = ""
+sound_volume = 0.5
+volume_change_sound = ""
+
+[backdrop]
+blur_intensity = 0.5
+enabled = false
+tint_intensity = 0.30000001192092896
+
+[battery]
+warning_threshold = 10
+
+[brightness]
+enable_ddcutil = true
+ignore_mmids = []
+minimum_brightness = 0.049999997019767761
+sync_all_monitors = false
+
+[calendar]
+enabled = false
+refresh_minutes = 15
+
+[desktop_widgets]
+enabled = false
+schema_version = 2
+
+[desktop_widgets.grid]
+cell_size = 16
+major_interval = 4
+visible = true
+
+[keybinds]
+cancel = ["Escape"]
+copy = ["Ctrl+c"]
+delete = ["Delete"]
+down = ["Down"]
+left = ["Left"]
+right = ["Right"]
+save = ["Ctrl+s"]
+tab_next = ["Tab"]
+tab_previous = ["Shift+ISO_Left_Tab"]
+up = ["Up"]
+validate = ["Return", "KP_Enter", "space"]
+
+[location]
+address = ""
+auto_locate = true
+custom_schedule = false
+sunrise = ""
+sunset = ""
+
+[nightlight]
+enabled = false
+force = false
+temperature_day = 6500
+temperature_night = 4000
+
+[storage]
+key_file = ""
+key_source = "secret-service"
+
+[weather]
+effects = true
+enabled = true
+refresh_minutes = 30
+unit = "metric"

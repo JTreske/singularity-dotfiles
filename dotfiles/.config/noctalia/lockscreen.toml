@@ -1,0 +1,13 @@
+[lockscreen]
+allow_empty_password = false
+blur_intensity = 0.0
+blurred_desktop = false
+enabled = true
+fingerprint = true
+lock_before_suspend = true
+monitors = []
+tint_intensity = 0.0
+wallpaper = ""
+
+[lockscreen_widgets]
+enabled = false

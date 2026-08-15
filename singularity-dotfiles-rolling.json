@@ -68,82 +68,82 @@
     {
       "name": "Hyprland Keyboard Layout",
       "information": "Should always be enabled for restore",
-      "path": "dotfiles/.config/hypr/conf/keyboard-layout.conf",
+      "path": "dotfiles/.config/hypr/conf/keyboard-layout.lua",
       "selected": true
     },
     {
       "name": "Hyprland Input",
-      "path": "dotfiles/.config/hypr/conf/input.conf",
+      "path": "dotfiles/.config/hypr/conf/input.lua",
       "selected": true
     },
     {
       "name": "Hyprland Keybinding",
-      "path": "dotfiles/.config/hypr/conf/keybinding.conf",
+      "path": "dotfiles/.config/hypr/conf/keybinding.lua",
       "selected": true
     },
     {
       "name": "Hyprland Device",
-      "path": "dotfiles/.config/hypr/conf/device.conf",
+      "path": "dotfiles/.config/hypr/conf/device.lua",
       "selected": true
     },
     {
       "name": "Hyprland Monitor",
-      "path": "dotfiles/.config/hypr/conf/monitor.conf",
+      "path": "dotfiles/.config/hypr/conf/monitor.lua",
       "selected": true
     },
     {
       "name": "Hyprland Environment",
-      "path": "dotfiles/.config/hypr/conf/environment-custom.conf",
+      "path": "dotfiles/.config/hypr/conf/environment-custom.lua",
       "selected": true
     },
     {
       "name": "Hyprland Autostart",
-      "path": "dotfiles/.config/hypr/conf/autostart-custom.conf",
+      "path": "dotfiles/.config/hypr/conf/autostart-custom.lua",
       "selected": true
     },
     {
       "name": "Hyprland General",
-      "path": "dotfiles/.config/hypr/conf/general.conf",
+      "path": "dotfiles/.config/hypr/conf/general.lua",
       "selected": true
     },
     {
       "name": "Hyprland Layout",
-      "path": "dotfiles/.config/hypr/conf/layout.conf",
+      "path": "dotfiles/.config/hypr/conf/layout.lua",
       "selected": true
     },
     {
       "name": "Hyprland Workspace",
-      "path": "dotfiles/.config/hypr/conf/workspace.conf",
+      "path": "dotfiles/.config/hypr/conf/workspace.lua",
       "selected": true
     },
     {
       "name": "Hyprland Window Rule",
-      "path": "dotfiles/.config/hypr/conf/window-rule.conf",
+      "path": "dotfiles/.config/hypr/conf/window-rule.lua",
       "selected": true
     },
     {
       "name": "Hyprland Decoration",
-      "path": "dotfiles/.config/hypr/conf/decoration.conf",
+      "path": "dotfiles/.config/hypr/conf/decoration.lua",
       "selected": true
     },
     {
       "name": "Hyprland Animation",
-      "path": "dotfiles/.config/hypr/conf/animation.conf",
+      "path": "dotfiles/.config/hypr/conf/animation.lua",
       "selected": true
     },
     {
       "name": "Hyprland Miscellaneous",
-      "path": "dotfiles/.config/hypr/conf/misc.conf",
+      "path": "dotfiles/.config/hypr/conf/misc.lua",
       "selected": true
     },
     {
       "name": "Hyprland Workspace",
-      "path": "dotfiles/.config/hypr/conf/workspace.conf",
+      "path": "dotfiles/.config/hypr/conf/workspace.lua",
       "selected": true
     },
     {
       "name": "Hyprland Custom",
-      "path": "dotfiles/.config/hypr/conf/custom.conf",
+      "path": "dotfiles/.config/hypr/conf/custom.lua",
       "selected": true
     },
     {
