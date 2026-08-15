@@ -78,7 +78,7 @@ session_placement = "floating"
 session_position = "center"
 shadow = true
 transparency_mode = "solid"
-wallpaper_placement = "attached"
+wallpaper_placement = "floating"
 wallpaper_position = "auto"
 
 [shell.privacy]
@@ -136,7 +136,7 @@ countdown_seconds = 0.0
 enabled = true
 glyph = ""
 label = ""
-shortcut = "4"
+shortcut = "3"
 variant = "default"
 
 [[shell.session.actions]]
@@ -146,7 +146,7 @@ countdown_seconds = 0.0
 enabled = true
 glyph = ""
 label = ""
-shortcut = "3"
+shortcut = "4"
 variant = "default"
 
 [[shell.session.actions]]

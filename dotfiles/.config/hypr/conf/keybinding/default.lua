@@ -29,7 +29,6 @@ hl.bind("XF86Calendar", hl.dsp.exec_cmd(ipc .. " panel-toggle control-center cal
 -- 2. SYSTEM ACTIONS
 hl.bind(mainMod .. " + BACKSPACE", hl.dsp.exec_cmd(ipc .. " panel-toggle session"), { description = "Session menu" })
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(ipc .. " session lock"), { description = "Lock" })
-hl.bind("XF86Lock", hl.dsp.exec_cmd(ipc .. " session lock"), { description = "Lock" })
 hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd(ipc .. " brightness-up"),
   { locked = true, repeated = true, description = "Brightness up" })
 hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd(ipc .. " brightness-down"),

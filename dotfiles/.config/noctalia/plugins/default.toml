@@ -1,4 +1,6 @@
-[plugin_settings]
+[plugin_settings."kenn/keybind-cheatsheet"]
+hyprland_lua_config = "~/.config/hypr/conf/keybinding/default.lua"
+hyprland_parser = "lua"
 
 [plugins]
 auto_update = true
