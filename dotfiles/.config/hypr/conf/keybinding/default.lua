@@ -1,13 +1,13 @@
 -- ! Follow the format defined by the Noctalia [keybind-cheatsheet](https://noctalia.dev/plugins/keybind-cheatsheet) plugin
 
 local mainMod = "SUPER"
-local ipc = "qs -c noctalia-shell ipc call"
+local ipc = "noctalia msg"
 local home = os.getenv("HOME")
 
 -- 1. APPLICATIONS
-hl.bind(mainMod .. " + K", hl.dsp.exec_cmd(ipc .. " plugin:keybind-cheatsheet toggle"),
+hl.bind(mainMod .. " + K", hl.dsp.exec_cmd(ipc .. " panel-toggle kenn/keybind-cheatsheet:cheatsheet"),
   { description = "Keybinding cheatsheet" })
-hl.bind(mainMod .. " + A", hl.dsp.exec_cmd(ipc .. " launcher toggle"), { description = "Application launcher" })
+hl.bind(mainMod .. " + A", hl.dsp.exec_cmd(ipc .. " panel-toggle launcher"), { description = "Application launcher" })
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(home .. "/.config/singularity/default-apps/terminal.sh"),
   { description = "Terminal" })
 hl.bind(mainMod .. " + F", hl.dsp.exec_cmd(home .. "/.config/singularity/default-apps/file-manager.sh"),
@@ -24,39 +24,40 @@ hl.bind(mainMod .. " + SHIFT + C", hl.dsp.exec_cmd(home .. "/.config/singularity
   { description = "Calculator" })
 hl.bind("XF86Calculator", hl.dsp.exec_cmd(home .. "/.config/singularity/default-apps/calculator.sh"),
   { description = "Calculator" })
-hl.bind("XF86Calendar", hl.dsp.exec_cmd(ipc .. " calendar toggle"), { description = "Calendar" })
+hl.bind("XF86Calendar", hl.dsp.exec_cmd(ipc .. " panel-toggle control-center calendar"), { description = "Calendar" })
 
 -- 2. SYSTEM ACTIONS
-hl.bind(mainMod .. " + BACKSPACE", hl.dsp.exec_cmd(ipc .. " sessionMenu toggle"), { description = "Session menu" })
-hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(ipc .. " lockScreen lock"), { description = "Lock" })
-hl.bind("XF86Lock", hl.dsp.exec_cmd(ipc .. " lockScreen lock"), { description = "Lock" })
-hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd(ipc .. " brightness increase"),
+hl.bind(mainMod .. " + BACKSPACE", hl.dsp.exec_cmd(ipc .. " panel-toggle session"), { description = "Session menu" })
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(ipc .. " session lock"), { description = "Lock" })
+hl.bind("XF86Lock", hl.dsp.exec_cmd(ipc .. " session lock"), { description = "Lock" })
+hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd(ipc .. " brightness-up"),
   { locked = true, repeated = true, description = "Brightness up" })
-hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd(ipc .. " brightness decrease"),
+hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd(ipc .. " brightness-down"),
   { locked = true, repeated = true, description = "Brightness down" })
 
 -- 3. UTILITY
-hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(ipc .. " launcher clipboard"), { description = "Clipboard history" })
-hl.bind(mainMod .. " + SHIFT + E", hl.dsp.exec_cmd(ipc .. " launcher emoji"), { description = "Emoji selector" })
-hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(ipc .. " plugin:screenshot takeScreenshot region"),
+hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(ipc .. " panel-toggle clipboard"), { description = "Clipboard history" })
+hl.bind(mainMod .. " + SHIFT + E", hl.dsp.exec_cmd(ipc .. " panel-toggle launcher /emo"),
+  { description = "Emoji selector" })
+hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(ipc .. " screenshot-region"),
   { description = "Screenshot region selector" })
-hl.bind("XF86SelectiveScreenshot", hl.dsp.exec_cmd(ipc .. " plugin:screenshot takeScreenshot region"),
+hl.bind("XF86SelectiveScreenshot", hl.dsp.exec_cmd(ipc .. " screenshot-region"),
   { description = "Screenshot region selector" })
-hl.bind("Print", hl.dsp.exec_cmd(ipc .. " plugin:screenshot takeScreenshot output"),
-  { description = "Screenshot of selected monitor" })
+hl.bind("Print", hl.dsp.exec_cmd(ipc .. " screenshot-fullscreen"),
+  { description = "Screenshot of focused monitor" })
 
 -- 4. MULTIMEDIA
-hl.bind("XF86AudioMute", hl.dsp.exec_cmd(ipc .. " volume muteOutput"),
+hl.bind("XF86AudioMute", hl.dsp.exec_cmd(ipc .. " volume-mute"),
   { locked = true, description = "Mute audio output" })
-hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd(ipc .. " volume increase"),
+hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd(ipc .. " volume-up"),
   { locked = true, repeated = true, description = "Increase volume" })
-hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd(ipc .. " volume decrease"),
+hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd(ipc .. " volume-down"),
   { locked = true, repeated = true, description = "Decrease volume" })
-hl.bind("XF86AudioPlay", hl.dsp.exec_cmd(ipc .. " media playPause"), { locked = true, description = "Play/pause toggle" })
+hl.bind("XF86AudioPlay", hl.dsp.exec_cmd(ipc .. " media toggle"), { locked = true, description = "Play/pause toggle" })
 hl.bind("XF86AudioPause", hl.dsp.exec_cmd(ipc .. " media pause"), { locked = true, description = "Pause track" })
 hl.bind("XF86AudioNext", hl.dsp.exec_cmd(ipc .. " media next"), { locked = true, description = "Next track" })
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd(ipc .. " media previous"), { locked = true, description = "Previous track" })
-hl.bind("XF86AudioMicMute", hl.dsp.exec_cmd(ipc .. " volume muteInput"),
+hl.bind("XF86AudioMicMute", hl.dsp.exec_cmd(ipc .. " mic-mute"),
   { locked = true, description = "Mute microphone" })
 
 -- 5. WORKSPACE ACTIONS
