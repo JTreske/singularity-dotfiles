@@ -1,19 +1,31 @@
-local monitors = hl.get_monitors()
+local function setup_workspace_rules()
+  local monitors = hl.get_monitors()
 
-local monitor1 = monitors[1]
--- Fallback to monitor1 if monitor2 is not available
-local monitor2 = monitors[2] or monitors[1]
+  if #monitors < 2 then
+    return
+  end
 
-for i = 1, 5 do
-  hl.workspace_rule({
-    workspace = tostring(i),
-    monitor = monitor1.name,
-  })
+  local monitor1 = monitors[1]
+  local monitor2 = monitors[2]
+
+  for i = 1, 5 do
+    hl.workspace_rule({
+      workspace = tostring(i),
+      monitor = monitor1.name,
+      default = (i == 1)
+    })
+  end
+
+  for i = 6, 10 do
+    hl.workspace_rule({
+      workspace = tostring(i),
+      monitor = monitor2.name,
+      default = (i == 6)
+    })
+  end
 end
 
-for i = 6, 10 do
-  hl.workspace_rule({
-    workspace = tostring(i),
-    monitor = monitor2.name,
-  })
-end
+setup_workspace_rules()
+
+hl.on("monitor.added", setup_workspace_rules)
+hl.on("monitor.removed", setup_workspace_rules)

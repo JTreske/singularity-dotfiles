@@ -121,12 +121,8 @@ avatar() {
     return
   fi
 
-  local face="${HOME}/.face"
-  info "Setting '$face' ..."
-  cp "$image" "$face"
-
   info "Setting SDDM avatar ..."
-  /usr/share/sddm/themes/silent/change_avatar.sh "$USER" "$face"
+  /usr/share/sddm/themes/silent/change_avatar.sh "$USER" "$image"
 
   success "Avatar install finished!"
 }

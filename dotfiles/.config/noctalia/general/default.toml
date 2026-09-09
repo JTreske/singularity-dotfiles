@@ -26,6 +26,8 @@ sync_all_monitors = false
 [calendar]
 enabled = false
 refresh_minutes = 15
+event_date_format = "%A %e %B"
+event_time_format = "%H:%M"
 
 [desktop_widgets]
 enabled = false

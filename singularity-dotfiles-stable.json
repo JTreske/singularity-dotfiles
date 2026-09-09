@@ -4,7 +4,7 @@
   "description": "A fully featured desktop environment based on the dynamic tiling wayland compositor Hyprland",
   "author": "Johannes Treske",
   "repository": "https://github.com/JTreske/singularity-dotfiles.git",
-  "tag": "2.0.0",
+  "tag": "2.0.1",
   "dotfiles": "dotfiles",
   "hooks": "hooks",
   "dependencies": "dependencies",
@@ -124,11 +124,6 @@
     {
       "name": "Noctalia Settings",
       "path": "dotfiles/.config/noctalia/settings.json",
-      "selected": true
-    },
-    {
-      "name": "Noctalia Wallpaper Settings",
-      "path": "dotfiles/.cache/noctalia/wallpapers.json",
       "selected": true
     },
     {
