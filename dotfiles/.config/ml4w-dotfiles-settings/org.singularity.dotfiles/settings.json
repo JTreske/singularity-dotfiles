@@ -255,5 +255,203 @@
         "default": ""
       }
     ]
+  },
+  {
+    "group": "Noctalia",
+    "description": "",
+    "settings": [
+      {
+        "name": "Bar",
+        "id": "noctalia_bar",
+        "instructions": "Choose your bar variant:",
+        "file": "~/.config/noctalia/bar.toml",
+        "type": "files",
+        "folder": "~/.config/noctalia/bar",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "files = [\"bar/.*\"]",
+        "default": "default.toml"
+      },
+      {
+        "name": "Control Center",
+        "id": "noctalia_control_center",
+        "instructions": "Choose your control center variant:",
+        "file": "~/.config/noctalia/control_center.toml",
+        "type": "files",
+        "folder": "~/.config/noctalia/control_center",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "files = [\"control_center/.*\"]",
+        "default": "default.toml"
+      },
+      {
+        "name": "Dock",
+        "id": "noctalia_dock",
+        "instructions": "Choose your dock variant:",
+        "file": "~/.config/noctalia/dock.toml",
+        "type": "files",
+        "folder": "~/.config/noctalia/dock",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "files = [\"dock/.*\"]",
+        "default": "default.toml"
+      },
+      {
+        "name": "General",
+        "id": "noctalia_general",
+        "instructions": "Choose your noctalia general variant:",
+        "file": "~/.config/noctalia/general.toml",
+        "type": "files",
+        "folder": "~/.config/noctalia/general",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "files = [\"general/.*\"]",
+        "default": "default.toml"
+      },
+      {
+        "name": "Hooks",
+        "id": "noctalia_hooks",
+        "instructions": "Choose your hooks variant:",
+        "file": "~/.config/noctalia/hooks.toml",
+        "type": "files",
+        "folder": "~/.config/noctalia/hooks",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "files = [\"hooks/.*\"]",
+        "default": "default.toml"
+      },
+      {
+        "name": "Hot Corners",
+        "id": "noctalia_hot_corners",
+        "instructions": "Choose your hot corners variant:",
+        "file": "~/.config/noctalia/hot_corners.toml",
+        "type": "files",
+        "folder": "~/.config/noctalia/hot_corners",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "files = [\"hot_corners/.*\"]",
+        "default": "default.toml"
+      },
+      {
+        "name": "Idle",
+        "id": "noctalia_idle",
+        "instructions": "Choose your idle variant:",
+        "file": "~/.config/noctalia/idle.toml",
+        "type": "files",
+        "folder": "~/.config/noctalia/idle",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "files = [\"idle/.*\"]",
+        "default": "default.toml"
+      },
+      {
+        "name": "Lockscreen",
+        "id": "noctalia_lockscreen",
+        "instructions": "Choose your lockscreen variant:",
+        "file": "~/.config/noctalia/lockscreen.toml",
+        "type": "files",
+        "folder": "~/.config/noctalia/lockscreen",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "files = [\"lockscreen/.*\"]",
+        "default": "default.toml"
+      },
+      {
+        "name": "Notification",
+        "id": "noctalia_notification",
+        "instructions": "Choose your notification variant:",
+        "file": "~/.config/noctalia/notification.toml",
+        "type": "files",
+        "folder": "~/.config/noctalia/notification",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "files = [\"notification/.*\"]",
+        "default": "default.toml"
+      },
+      {
+        "name": "OSD",
+        "id": "noctalia_osd",
+        "instructions": "Choose your OSD variant:",
+        "file": "~/.config/noctalia/osd.toml",
+        "type": "files",
+        "folder": "~/.config/noctalia/osd",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "files = [\"osd/.*\"]",
+        "default": "default.toml"
+      },
+      {
+        "name": "Plugins",
+        "id": "noctalia_plugins",
+        "instructions": "Choose your plugins variant:",
+        "file": "~/.config/noctalia/plugins.toml",
+        "type": "files",
+        "folder": "~/.config/noctalia/plugins",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "files = [\"plugins/.*\"]",
+        "default": "default.toml"
+      },
+      {
+        "name": "Shell",
+        "id": "noctalia_shell",
+        "instructions": "Choose your shell variant:",
+        "file": "~/.config/noctalia/shell.toml",
+        "type": "files",
+        "folder": "~/.config/noctalia/shell",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "files = [\"shell/.*\"]",
+        "default": "default.toml"
+      },
+      {
+        "name": "System",
+        "id": "noctalia_system",
+        "instructions": "Choose your system variant:",
+        "file": "~/.config/noctalia/system.toml",
+        "type": "files",
+        "folder": "~/.config/noctalia/system",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "files = [\"system/.*\"]",
+        "default": "default.toml"
+      },
+      {
+        "name": "Theme",
+        "id": "noctalia_theme",
+        "instructions": "Choose your theme variant:",
+        "file": "~/.config/noctalia/theme.toml",
+        "type": "files",
+        "folder": "~/.config/noctalia/theme",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "files = [\"theme/.*\"]",
+        "default": "default.toml"
+      },
+      {
+        "name": "Wallpaper",
+        "id": "noctalia_wallpaper",
+        "instructions": "Choose your wallpaper variant:",
+        "file": "~/.config/noctalia/wallpaper.toml",
+        "type": "files",
+        "folder": "~/.config/noctalia/wallpaper",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "files = [\"wallpaper/.*\"]",
+        "default": "default.toml"
+      },
+      {
+        "name": "Widget",
+        "id": "noctalia_widget",
+        "instructions": "Choose your widget variant:",
+        "file": "~/.config/noctalia/widget.toml",
+        "type": "files",
+        "folder": "~/.config/noctalia/widget",
+        "mode": "replace",
+        "checkpoint": "# variant #",
+        "match": "files = [\"widget/.*\"]",
+        "default": "default.toml"
+      }
+    ]
   }
 ]

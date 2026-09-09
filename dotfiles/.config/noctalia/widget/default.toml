@@ -90,3 +90,11 @@ type = "sysmon"
 empty_color = "outline"
 hide_when_empty = true
 type = "workspaces"
+
+[widget.system-upgrade]
+glyph = "refresh"
+type = "custom_button"
+
+[widget.system-upgrade.actions]
+left = "exec ~/.config/singularity/default-apps/terminal.sh singularity-system-upgrade"
+middle = "none"

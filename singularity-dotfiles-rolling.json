@@ -41,28 +41,88 @@
       "selected": false
     },
     {
-      "name": "Noctalia Settings",
-      "path": "dotfiles/.config/noctalia/settings.json",
+      "name": "Noctalia Bar",
+      "path": "dotfiles/.config/noctalia/bar.toml",
+      "selected": true
+    },
+    {
+      "name": "Noctalia Control Center",
+      "path": "dotfiles/.config/noctalia/control_center.toml",
+      "selected": true
+    },
+    {
+      "name": "Noctalia Dock",
+      "path": "dotfiles/.config/noctalia/dock.toml",
+      "selected": true
+    },
+    {
+      "name": "Noctalia General",
+      "path": "dotfiles/.config/noctalia/general.toml",
+      "selected": true
+    },
+    {
+      "name": "Noctalia Hooks",
+      "path": "dotfiles/.config/noctalia/hooks.toml",
+      "selected": true
+    },
+    {
+      "name": "Noctalia Hot Corners",
+      "path": "dotfiles/.config/noctalia/hot_corners.toml",
+      "selected": true
+    },
+    {
+      "name": "Noctalia Idle",
+      "path": "dotfiles/.config/noctalia/idle.toml",
+      "selected": true
+    },
+    {
+      "name": "Noctalia Lockscreen",
+      "path": "dotfiles/.config/noctalia/lockscreen.toml",
+      "selected": true
+    },
+    {
+      "name": "Noctalia Notification",
+      "path": "dotfiles/.config/noctalia/notification.toml",
+      "selected": true
+    },
+    {
+      "name": "Noctalia OSD",
+      "path": "dotfiles/.config/noctalia/osd.toml",
       "selected": true
     },
     {
       "name": "Noctalia Plugins",
-      "path": "dotfiles/.config/noctalia/plugins.json",
+      "path": "dotfiles/.config/noctalia/plugins.toml",
       "selected": true
     },
     {
-      "name": "Noctalia Plugin Settings",
-      "path": "dotfiles/.config/noctalia/plugins",
+      "name": "Noctalia Shell",
+      "path": "dotfiles/.config/noctalia/shell.toml",
       "selected": true
     },
     {
-      "name": "Noctalia User Templates",
-      "path": "dotfiles/.config/noctalia/user-templates.toml",
+      "name": "Noctalia System",
+      "path": "dotfiles/.config/noctalia/system.toml",
       "selected": true
     },
     {
-      "name": "Noctalia Wallpaper Settings",
-      "path": "dotfiles/.cache/noctalia/wallpapers.json",
+      "name": "Noctalia Theme",
+      "path": "dotfiles/.config/noctalia/theme.toml",
+      "selected": true
+    },
+    {
+      "name": "Noctalia Wallpaper",
+      "path": "dotfiles/.config/noctalia/wallpaper.toml",
+      "selected": true
+    },
+    {
+      "name": "Noctalia Widget",
+      "path": "dotfiles/.config/noctalia/widget.toml",
+      "selected": true
+    },
+    {
+      "name": "Noctalia Settings",
+      "path": "dotfiles/.config/noctalia/settings.json",
       "selected": true
     },
     {
